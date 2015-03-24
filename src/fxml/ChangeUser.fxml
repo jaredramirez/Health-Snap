@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChangeUserController">
+    <children>
+        <GridPane prefHeight="135.0" prefWidth="607.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="91.0" minHeight="0.0" prefHeight="26.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label fx:id="titleLabel" prefHeight="17.0" prefWidth="126.0" text="          Edit User"
+                       textAlignment="CENTER" GridPane.columnIndex="2"/>
+                <Label text="Change username:" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label text="Change password:" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <TextField fx:id="nameText" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                <Button mnemonicParsing="false" onAction="#changeName" text="Submit" GridPane.columnIndex="3"
+                        GridPane.rowIndex="1"/>
+                <TextField fx:id="passwordText" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+                <Label fx:id="nameError" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+                <Label fx:id="passwordError" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+                <Label layoutX="132.0" layoutY="81.0" text="Repeat password:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="3"/>
+                <TextField fx:id="passwordText2" layoutX="254.0" layoutY="77.0" GridPane.columnIndex="2"
+                           GridPane.rowIndex="3"/>
+                <Button mnemonicParsing="false" onAction="#changePassword" text="Submit" GridPane.columnIndex="3"
+                        GridPane.rowIndex="3"/>
+                <Label fx:id="passwordError2" layoutX="496.0" layoutY="81.0" wrapText="true" GridPane.columnIndex="4"
+                       GridPane.rowIndex="3"/>
+            </children>
+        </GridPane>
+        <GridPane layoutY="156.0" prefHeight="269.0" prefWidth="607.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label text="Change weight:" wrapText="true" GridPane.columnIndex="1"/>
+                <Label layoutX="85.0" layoutY="29.0" text="Change height:" wrapText="true" GridPane.columnIndex="5"/>
+                <Label layoutX="313.0" layoutY="29.0" text="Change age:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="2"/>
+                <Label layoutX="85.0" layoutY="137.0" text="Change waist size:" wrapText="true" GridPane.columnIndex="5"
+                       GridPane.rowIndex="2"/>
+                <TextField fx:id="weightText" GridPane.columnIndex="2"/>
+                <Button mnemonicParsing="false" onAction="#changeWeight" text="Submit" GridPane.columnIndex="3"/>
+                <TextField fx:id="heightText" layoutX="161.0" layoutY="25.0" GridPane.columnIndex="6"/>
+                <Button mnemonicParsing="false" onAction="#changeHeight" text="Submit" GridPane.columnIndex="7"/>
+                <TextField fx:id="ageText" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+                <Button mnemonicParsing="false" onAction="#changeAge" text="Submit" GridPane.columnIndex="3"
+                        GridPane.rowIndex="2"/>
+                <TextField fx:id="waistText" layoutX="10.0" layoutY="25.0" GridPane.columnIndex="6"
+                           GridPane.rowIndex="2"/>
+                <Button mnemonicParsing="false" onAction="#changeWaist" text="Submit" GridPane.columnIndex="7"
+                        GridPane.rowIndex="2"/>
+
+                <ComboBox fx:id="genderComboBox" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+                <Button mnemonicParsing="false" onAction="#changeGender" text="Submit" GridPane.columnIndex="3"
+                        GridPane.rowIndex="4"/>
+                <ComboBox fx:id="intensityComboBox" prefWidth="150.0" GridPane.columnIndex="5" GridPane.rowIndex="4"/>
+                <Button mnemonicParsing="false" onAction="#changeIntensity" text="Submit" GridPane.columnIndex="6"
+                        GridPane.rowIndex="4"/>
+                <Label fx:id="ageError" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+                <Label fx:id="weightError" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                <Label fx:id="heightError" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
+                <Label fx:id="waistError" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
+                <Label fx:id="genderError" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                <Label fx:id="intensityError" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="4"/>
+            </children>
+        </GridPane>
+        <Button cancelButton="true" layoutX="270.0" layoutY="425.0" mnemonicParsing="false" onAction="#back"
+                prefHeight="25.0" prefWidth="68.0" text="Cancel"/>
+        <Label fx:id="changedLabel" layoutX="149.0" layoutY="459.0" prefHeight="17.0" prefWidth="310.0"/>
+    </children>
+</AnchorPane>

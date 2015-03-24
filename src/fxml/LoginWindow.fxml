@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="262.0" prefWidth="400" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginWindowController">
+    <children>
+        <Label fx:id="userLabel" layoutX="96.0" layoutY="123.0" minHeight="16" minWidth="33.0" prefHeight="17.0"
+               prefWidth="33.0" text="User:"/>
+        <Label fx:id="passwordLabel" layoutX="67.0" layoutY="154.0" minHeight="16" minWidth="52.0" prefHeight="17.0"
+               prefWidth="59.0" text="Password:"/>
+        <TextField fx:id="username" layoutX="134.0" layoutY="119.0" minHeight="16" minWidth="69"/>
+        <TextField fx:id="password" layoutX="134.0" layoutY="150.0" minHeight="16" minWidth="69"/>
+        <Button fx:id="loginButton" defaultButton="true" layoutX="141.0" layoutY="192.0" onAction="#login"
+                text="Enter"/>
+        <Button fx:id="newUserButton" layoutX="208.0" layoutY="192.0" onAction="#newUser" text="New User"/>
+        <Label fx:id="bottomLabel" layoutX="48.0" layoutY="217.0" minHeight="16" minWidth="69" prefHeight="36.0"
+               prefWidth="322.0"/>
+        <ImageView fitHeight="106.0" fitWidth="139.0" layoutX="150.0" layoutY="6.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="/Photos/Health Snap.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

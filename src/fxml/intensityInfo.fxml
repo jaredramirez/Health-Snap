@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.IntensityInfoController">
+    <children>
+        <Button cancelButton="true" layoutX="274.0" layoutY="362.0" mnemonicParsing="false" onAction="#closeWindow"
+                text="Back"/>
+        <GridPane layoutX="74.0" layoutY="26.0" prefHeight="323.0" prefWidth="441.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="441.0" minWidth="10.0" prefWidth="291.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="68.0" minHeight="0.0" prefHeight="68.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label text="Low: low intensity activities and leisure activities (primarily sedentary)"/>
+                <Label prefHeight="64.0" prefWidth="441.0"
+                       text="Light: light exercise (leisurely walking for 30-50 minutes 3-4 days/week, golfing, \n house chores)"
+                       wrapText="true" GridPane.rowIndex="1"/>
+                <Label text="Moderate: moderate exercise 3-5 days per week (60-70% MHR(Max Heart Rate) for 30-60 minutes/session)"
+                       wrapText="true" GridPane.rowIndex="2"/>
+                <Label text="Active: active individuals (exercising 6-7 days/week at moderate to high intensity (70-85% MHR(Max Heart Rate)) for 45-60 minutes/session)"
+                       wrapText="true" GridPane.rowIndex="3"/>
+                <Label text="Very Active: the extremely active individuals (engaged in heavy/intense exercise like heavy manual labor, heavy lifting, endurance athletes, and competitive team sports athletes 6-7 days/week for 90 + minutes/session)"
+                       wrapText="true" GridPane.rowIndex="4"/>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
